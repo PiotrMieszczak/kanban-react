@@ -3,6 +3,7 @@
 import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
+import { Button } from '@ui/index';
 
 export function App() {
   return (
@@ -10,6 +11,7 @@ export function App() {
       <div className="bg-indigo-500 text-white p-4 rounded">
         Tailwind works from libs/ui 🎉
       </div>
+      <Button variant="outline">Button</Button>
       {/* <NxWelcome title="kanban-react-client" /> */}
 
       {/* START: routes */}
