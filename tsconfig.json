@@ -8,6 +8,9 @@
     },
     {
       "path": "./apps/kanban-react-client"
+    },
+    {
+      "path": "./libs/ui"
     }
   ]
 }
