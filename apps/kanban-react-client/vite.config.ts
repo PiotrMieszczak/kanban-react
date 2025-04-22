@@ -1,7 +1,8 @@
 /// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
-import tsconfigPaths from 'vite-tsconfig-paths';
+import { nxViteTsPaths } from '@nx/vite/plugins/nx-tsconfig-paths.plugin';
+import path from 'path';
 
 export default defineConfig(() => ({
   root: __dirname,
@@ -14,7 +15,7 @@ export default defineConfig(() => ({
     port: 4300,
     host: 'localhost',
   },
-  plugins: [react(), tsconfigPaths()],
+  plugins: [react(), nxViteTsPaths()],
   // Uncomment this if you are using workers.
   // worker: {
   //  plugins: [ nxViteTsPaths() ],
@@ -26,6 +27,9 @@ export default defineConfig(() => ({
     commonjsOptions: {
       transformMixedEsModules: true,
     },
+  },
+  css: {
+    postcss: path.resolve(__dirname, '../../libs/ui/postcss.config.cjs'), // 👈 updated here
   },
   test: {
     watch: false,
