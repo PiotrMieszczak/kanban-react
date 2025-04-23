@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Board } from "../models/board.model";
 import { boardDataService } from "../services/board-data.service";
 import { BoardAdapter } from "../adapters/board.adapter";
@@ -15,12 +15,11 @@ export const useGetBoards = (): GetBoardReturn => {
     const [error, setError] = useState<Error | null>(null);
     const [boards, setBoards] = useState<Board[] | null>(null);
 
-
     useEffect(() => {
-        const fetchBoard = async () => { 
+        const fetchBoard = async () => {
             try {
-                const boardsDTO =   await boardDataService.getAllBoards();
-                const boards = boardsDTO.map((boardDTO: BoardDTO) => BoardAdapter.createBoard(boardDTO));
+                const res = await boardDataService.getAllBoards();
+                const boards = res.data.map((boardDTO: BoardDTO) => BoardAdapter.createBoard(boardDTO));
                 setBoards(boards);
                 setLoading(false);
             }

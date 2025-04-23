@@ -19,12 +19,12 @@
     "customConditions": ["development"],
     "baseUrl": ".",
     "paths": {
-      "@ui/*": ["libs/ui/src/*"],
-      "@ui/components/*": ["libs/ui/src/components/*"],
+      "@board/*": ["libs/domain/board/src/*"],
       "@domain/*": ["libs/domain/src/*"],
       "@shared/*": ["libs/domain/shared/src/*"],
-      "@board/*": ["libs/domain/board/src/*"],
       "@task/*": ["libs/domain/task/src/*"],
+      "@ui/*": ["libs/ui/src/*"],
+      "@ui/components/*": ["libs/ui/src/components/*"]
     }
   }
 }

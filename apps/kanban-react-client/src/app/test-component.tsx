@@ -1,13 +1,7 @@
 import React, { JSX } from 'react';
 import { Button } from '@kanban-react/ui';
-import { useGetBoards } from '@board/hooks';
-
 
 export function TestComponent(): JSX.Element {
-  const { boards, error, loading } = useGetBoards();
-
-  console.log('boards', boards);
-  
   return (
     <div className="p-4 bg-gray-100 rounded-lg">
       <h1 className="text-2xl font-bold mb-4">Tailwind Test Component</h1>

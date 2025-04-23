@@ -3,11 +3,11 @@ import { httpRequestService } from "@shared/services/http/http.service";
 
 class BoardDataService {
     public getAllBoards = (): Promise<any> => {
-      return httpRequestService.get<BoardDTO[]>(`/boards`);
+      return httpRequestService.get<{data: BoardDTO[]}>(`boards`);
     };
 
     public getBoardById = (id: string): Promise<any> => {
-      return httpRequestService.get<BoardDTO>(`/boards/${id}`);
+      return httpRequestService.get<BoardDTO>(`boards/${id}`);
     };
   }
   
