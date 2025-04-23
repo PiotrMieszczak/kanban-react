@@ -9,9 +9,9 @@ export function App() {
   return (
     <div>
       <div className="bg-indigo-500 text-white p-4 rounded">
-        Tailwind works from libs/ui 🎉
+        <span className="text-2xl font-medium">Tailwind works from libs/ui 🎉</span>
       </div>
-      <Button variant="outline">Button</Button>
+      <Button>Button</Button>
       {/* <NxWelcome title="kanban-react-client" /> */}
 
       {/* START: routes */}

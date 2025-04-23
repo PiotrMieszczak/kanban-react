@@ -2042,9 +2042,10 @@ __metadata:
     "@swc/core": "npm:~1.5.7"
     "@swc/helpers": "npm:~0.5.11"
     "@tailwindcss/postcss": "npm:^4.1.4"
+    "@tailwindcss/vite": "npm:^4.1.4"
     "@testing-library/dom": "npm:10.4.0"
     "@testing-library/react": "npm:16.1.0"
-    "@types/node": "npm:^20.0.0"
+    "@types/node": "npm:^22.14.1"
     "@types/react": "npm:19.0.0"
     "@types/react-dom": "npm:19.0.0"
     "@vitejs/plugin-react": "npm:^4.2.0"
@@ -4499,6 +4500,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tailwindcss/vite@npm:^4.1.4":
+  version: 4.1.4
+  resolution: "@tailwindcss/vite@npm:4.1.4"
+  dependencies:
+    "@tailwindcss/node": "npm:4.1.4"
+    "@tailwindcss/oxide": "npm:4.1.4"
+    tailwindcss: "npm:4.1.4"
+  peerDependencies:
+    vite: ^5.2.0 || ^6
+  checksum: 10c0/21cbc6d3069923bbbcca9fb9f851c32abde47f124eefcfb246e3870d73d3e56909118b3fdf1619b7f74fa8d45c562811a22237409b24d083b4d02a98bcafc3b1
+  languageName: node
+  linkType: hard
+
 "@testing-library/dom@npm:10.4.0":
   version: 10.4.0
   resolution: "@testing-library/dom@npm:10.4.0"
@@ -4696,21 +4710,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^22.14.1":
   version: 22.14.1
   resolution: "@types/node@npm:22.14.1"
   dependencies:
     undici-types: "npm:~6.21.0"
   checksum: 10c0/d49c4d00403b1c2348cf0701b505fd636d80aabe18102105998dc62fdd36dcaf911e73c7a868c48c21c1022b825c67b475b65b1222d84b704d8244d152bb7f86
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^20.0.0":
-  version: 20.17.30
-  resolution: "@types/node@npm:20.17.30"
-  dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10c0/649782c7822367d751472d70c948bcc50cded1a4744610f706f81cd54e1fc015523567d7e3e17f6b19e3e2797f6f23b653e898bdb4a2f21f8759ceba49976310
   languageName: node
   linkType: hard
 
@@ -14239,13 +14244,6 @@ __metadata:
     buffer: "npm:^5.2.1"
     through: "npm:^2.3.8"
   checksum: 10c0/2ea2048f3c9db3499316ccc1d95ff757017ccb6f46c812d7c42466247e3b863fb178864267482f7f178254214247779daf68e85f50bd7736c3c97ba2d58b910a
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~6.19.2":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
   languageName: node
   linkType: hard
 
