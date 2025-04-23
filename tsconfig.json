@@ -13,12 +13,6 @@
       "path": "./libs/ui"
     },
     {
-      "path": "./libs/domain"
-    },
-    {
-      "path": "./domain"
-    },
-    {
       "path": "./libs/domain/board"
     },
     {

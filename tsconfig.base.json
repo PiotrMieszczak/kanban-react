@@ -20,7 +20,11 @@
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["libs/ui/src/*"],
-      "@ui/components/*": ["libs/ui/src/components/*"]
+      "@ui/components/*": ["libs/ui/src/components/*"],
+      "@domain/*": ["libs/domain/src/*"],
+      "@shared/*": ["libs/domain/shared/src/*"],
+      "@board/*": ["libs/domain/board/src/*"],
+      "@task/*": ["libs/domain/task/src/*"],
     }
   }
 }
