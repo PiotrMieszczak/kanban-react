@@ -1,8 +1,8 @@
-import { ColumnsDTO } from "./column.dto";
+import { ColumnDTO } from "./column.dto";
 
 export interface BoardDTO {
     id: string;
     name: string;
-    columns: ColumnsDTO[];
+    columns: ColumnDTO[];
 }
   
