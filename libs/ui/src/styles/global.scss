@@ -1,5 +1,11 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@use "sass:meta";      
+@use "tailwindcss";
+/* Removing @config directive as it's causing lint warnings */
+@config "../../tailwind.config.cjs"; 
+/* Add classic Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @custom-variant dark (&:is(.dark *));
 

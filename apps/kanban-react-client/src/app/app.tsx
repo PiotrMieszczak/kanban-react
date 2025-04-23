@@ -4,6 +4,7 @@ import NxWelcome from './nx-welcome';
 
 import { Route, Routes, Link } from 'react-router-dom';
 import { Button } from '@ui/index';
+import { TestComponent } from './test-component';
 
 export function App() {
   return (
@@ -12,6 +13,7 @@ export function App() {
         <span className="text-2xl font-medium">Tailwind works from libs/ui 🎉</span>
       </div>
       <Button>Button</Button>
+      <TestComponent />
       {/* <NxWelcome title="kanban-react-client" /> */}
 
       {/* START: routes */}

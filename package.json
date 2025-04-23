@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "tw:show": "tailwindcss --show-config --config libs/ui/tailwind.config.cjs"
+  },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
     "@nx/cypress": "20.8.0",

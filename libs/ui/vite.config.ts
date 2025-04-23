@@ -2,8 +2,15 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
 import dts from 'vite-plugin-dts';
-import * as path from 'path';
 import tailwindcss from '@tailwindcss/vite';
+import path from 'path';
+import fs from 'fs';
+
+const postcssConfigPath = path.resolve(__dirname, './postcss.config.cjs');
+console.log('→ Loading Library PostCSS config from:', postcssConfigPath);
+if (!fs.existsSync(postcssConfigPath)) {
+  console.error('⚠️  PostCSS config not found at', postcssConfigPath);
+}
 
 export default defineConfig(() => ({
   root: __dirname,
