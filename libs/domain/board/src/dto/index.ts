@@ -1,2 +1,2 @@
 export * from './board.dto';
-export * from './columns.dto';
+export * from './column.dto';

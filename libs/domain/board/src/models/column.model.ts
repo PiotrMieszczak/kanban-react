@@ -1,4 +1,4 @@
-export interface ColumnsDTO {
+export interface Column {
     id: string;
     name: string;
 }

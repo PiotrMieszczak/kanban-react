@@ -1,2 +1,2 @@
 export * from './board.model';
-export * from './columns.model';
+export * from './column.model';

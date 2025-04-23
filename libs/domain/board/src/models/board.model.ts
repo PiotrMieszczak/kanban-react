@@ -1,4 +1,4 @@
-import { Columns } from "./columns.model";
+import { Columns } from "./column.model";
 
 export interface Board {
  id: string;
