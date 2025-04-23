@@ -1,20 +1,3 @@
-// /** @type {import('tailwindcss').Config} */
-// module.exports = {
-//   content: [
-//     './libs/ui/**/*.{ts,tsx,js,jsx,scss}',
-//     './apps/**/*.{ts,tsx,js,jsx,scss}',
-//     './node_modules/@shadcn/**/*.{js,ts,jsx,tsx}', // Include Shadcn components
-//   ],
-//   safelist: [
-//     {
-//       pattern: /./, // Safelist all classes (use cautiously)
-//     },
-//   ],
-//   theme: { extend: {} },
-//   plugins: [],
-// };
-
-// libs/ui/tailwind.config.cjs
 const plugin = require('tailwindcss/plugin');
 
 console.log('⚡️  🛠️  Tailwind config.cjs loaded!');

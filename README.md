@@ -23,27 +23,45 @@ npx nx show project kanban-react-client
 <strong>📁 Folder Structure (DDD, NX, Zustand)</strong>
 
 ```
+.
+├── data.json                      ← your mock data for json-server
 ├── apps/
 │   └── kanban-board-client/
 │       └── src/
 │           └── app/
-│               ├── pages/
-│               ├── layout/
-│               ├── hooks/
-│               ├── App.tsx
-│               └── main.tsx
+│               ├── pages/         ← route components (Dashboard, BoardView…)
+│               ├── layout/        ← global layout (Sidebar, Header, Providers)
+│               ├── hooks/         ← UI-only hooks (e.g. useMediaQuery)
+│               ├── App.tsx        ← root App
+│               └── main.tsx       ← ReactDOM.render + import global.scss
 ├── libs/
-│   └── domain/
-│       ├── board/
-│       ├── task/
-│       └── theme/
-├── ui/
-│   ├── components/
-│   ├── layout/
-│   ├── styles/
-│   └── hooks/
-└── infrastructure/
-    ├── api/
-    ├── utils/
-    └── types/
+│   ├── domain/
+│   │   ├── board/
+│   │   │   ├── models/            ← Board, Column value objects
+│   │   │   ├── services/          ← pure business logic (moveTask, etc)
+│   │   │   ├── interfaces/        ← IBoardRepository port
+│   │   │   └── adapters/          ← json-server adapter implementing IBoardRepository
+│   │   └── task/
+│   │       ├── models/            ← Task, Subtask
+│   │       ├── services/          ← business logic (toggleSubtask, reorder…)
+│   │       ├── interfaces/        ← ITaskRepository port
+│   │       └── adapters/          ← json-server adapter implementing ITaskRepository
+│   ├── application/               ← orchestrate domain + repos
+│   │   ├── board/                 ← createBoardUseCase, fetchBoardsUseCase
+│   │   └── task/                  ← createTaskUseCase, fetchTasksUseCase
+│   ├── context/                   ← React Context + hooks
+│   │   ├── board/
+│   │   │   ├── BoardProvider.tsx  ← wraps children, loads initial data
+│   │   │   ├── useBoard.ts        ← typed useContext(BoardContext)
+│   │   │   └── index.ts
+│   │   └── task/
+│   │       ├── TaskProvider.tsx
+│   │       ├── useTask.ts
+│   │       └── index.ts
+│   └── ui/
+│       ├── components/            ← shadcn/Tailwind atoms & molecules
+│       ├── layout/                ← shared layout pieces (Modal, Dropdown)
+│       ├── styles/                ← global.scss + tokens + tailwind.config.cjs
+│       └── hooks/                 ← design-system hooks (useThemeToggle)
+└── package.json
 ```
