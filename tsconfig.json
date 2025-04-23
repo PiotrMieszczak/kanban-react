@@ -11,6 +11,21 @@
     },
     {
       "path": "./libs/ui"
+    },
+    {
+      "path": "./libs/domain"
+    },
+    {
+      "path": "./domain"
+    },
+    {
+      "path": "./libs/domain/board"
+    },
+    {
+      "path": "./libs/domain/task"
+    },
+    {
+      "path": "./libs/domain/shared"
     }
   ]
 }

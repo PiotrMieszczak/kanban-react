@@ -20,7 +20,7 @@
     "baseUrl": ".",
     "paths": {
       "@ui/*": ["libs/ui/src/*"],
-      "@ui/components/*": ["libs/ui/src/components/*"],
+      "@ui/components/*": ["libs/ui/src/components/*"]
     }
   }
 }
