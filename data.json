@@ -1,0 +1,83 @@
+{
+    "boards": [
+      {
+        "id": 1,
+        "name": "Project Alpha",
+        "columns": [
+          { "id": "todo", "name": "To Do" },
+          { "id": "inProgress", "name": "In Progress" },
+          { "id": "done", "name": "Done" }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Marketing Campaign",
+        "columns": [
+          { "id": "todo", "name": "To Do" },
+          { "id": "inProgress", "name": "In Progress" },
+          { "id": "done", "name": "Done" }
+        ]
+      }
+    ],
+    "tasks": [
+      {
+        "id": 1,
+        "boardId": 1,
+        "columnId": "todo",
+        "title": "Setup project repo",
+        "description": "Initialize Git, CI pipeline, and README",
+        "subtasks": [
+          { "id": 1, "title": "Initialize Git repository", "isCompleted": false },
+          { "id": 2, "title": "Configure CI workflow", "isCompleted": false },
+          { "id": 3, "title": "Add README", "isCompleted": true }
+        ]
+      },
+      {
+        "id": 2,
+        "boardId": 1,
+        "columnId": "inProgress",
+        "title": "Develop landing page",
+        "description": "Implement layout and styling components",
+        "subtasks": [
+          { "id": 4, "title": "Create React components", "isCompleted": true },
+          { "id": 5, "title": "Style with Tailwind", "isCompleted": false },
+          { "id": 6, "title": "Write unit tests", "isCompleted": false }
+        ]
+      },
+      {
+        "id": 3,
+        "boardId": 1,
+        "columnId": "done",
+        "title": "Project kickoff meeting",
+        "description": "Discuss goals, timeline, and responsibilities",
+        "subtasks": [
+          { "id": 7, "title": "Send calendar invites", "isCompleted": true },
+          { "id": 8, "title": "Prepare agenda", "isCompleted": true }
+        ]
+      },
+      {
+        "id": 4,
+        "boardId": 2,
+        "columnId": "todo",
+        "title": "Plan social media strategy",
+        "description": "Define channels, content themes, and schedule",
+        "subtasks": [
+          { "id": 9, "title": "Research platforms", "isCompleted": false },
+          { "id": 10, "title": "Draft posting calendar", "isCompleted": false }
+        ]
+      },
+      {
+        "id": 5,
+        "boardId": 2,
+        "columnId": "inProgress",
+        "title": "Write campaign blog post",
+        "description": "Create SEO-optimized content for launch",
+        "subtasks": [
+          { "id": 11, "title": "Outline post", "isCompleted": true },
+          { "id": 12, "title": "Write draft", "isCompleted": false },
+          { "id": 13, "title": "Edit and proofread", "isCompleted": false }
+        ]
+      }
+    ]
+  }
+  
